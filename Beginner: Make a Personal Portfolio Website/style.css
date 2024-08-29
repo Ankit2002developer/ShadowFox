@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://img.freepik.com/free-vector/creative-geometric-design-space_53876-89781.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile_pic {
+  transition: 0.3s;
+}
+
+.profile_pic:hover {
+  transform: scale(1.1);
+}
+
+.text h1 {
+  color: #fff;
+  font-family: "Poetsen One", sans-serif;
+
+  transform: scale(1.5);
+  transition: 0.4s;
+}
+
+.text h1:hover {
+  transform: scale(1.8);
+  cursor: pointer;
+}
+
+.text p {
+  color: #fff;
+  transform: translate(0, 100%);
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+header {
+  width: 100%;
+  height: 14vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.73));
+  position: fixed;
+  box-shadow: 0 0 1px 3px rgba(128, 128, 127, 0.4);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  z-index: 4;
+}
+
+header img {
+  height: 40%;
+  margin-left: 5%;
+  transition: 0.5s;
+}
+
+header img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#navbar {
+  width: 48%;
+}
+
+#navbar ul {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+}
+#navbar ul li {
+  display: inline-block;
+
+  list-style-type: none;
+  position: relative;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+ul li a:hover {
+  color: #097969;
+}
+
+#navbar ul li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #097969;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+#navbar ul li:hover::after {
+  width: 100%;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://img.freepik.com/free-vector/abstract-technology-particle-background_52683-25766.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.about_me {
+  width: 80%;
+  margin: auto;
+  height: 80vh;
+}
+
+.about_me h1 {
+  text-align: center;
+  color: #fff;
+  font-family: Poetsen One;
+  transform: scale(1.5);
+  transition: 0.4s;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.about_me h1:hover {
+  transform: scale(1.8);
+  cursor: pointer;
+}
+
+.about_me p {
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.about_me h2 {
+  color: #fff;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+
+.education {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+
+}
+
+#projects {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.1)),
+    url(https://img.freepik.com/premium-vector/dark-realistic-luxury-futuristic-modern-texture-abstract-background-with-shadow-overlay_473751-747.jpg);
+}
+
+.project-h1 {
+  color: #fff;
+  width: 40%;
+  font-family: "Poetsen One", sans-serif;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 1.6rem;
+  transition: 0.4s;
+}
+
+.project-h1:hover {
+  font-size: 1.9rem;
+  cursor: pointer;
+}
+
+#contact {
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(https://img.freepik.com/free-vector/aesthetic-arrow-background-black-gradient-technology-concept-vector_53876-140559.jpg);
+  background-size: cover;
+}
+
+#contact h1,
+p {
+  text-align: center;
+  color: #fff;
+  padding-top: 10px;
+}
+
+#contact h1 {
+  font-family: "Poetsen One", sans-serif;
+  padding-top: 50px;
+  width: 40%;
+  text-shadow: 1px 1.5px 2px #097969;
+  margin: auto;
+  transform: scale(1.4);
+  transition: 0.5s;
+}
+
+#contact h1:hover {
+  transform: scale(1.7);
+  cursor: pointer;
+}
+
+#contact p {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+}
+
+.contact {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 1.3rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1.5px 3px #097969;
+  transition: 0.3s ease-out;
+}
+
+.contact a:hover {
+  transform: translateY(10px);
+}
+
+#copyright {
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+  box-shadow: 2px 2px 5px 2px #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-family: "sans-serif", sans-serif;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 3px #097969;
+}
+
+.buttons {
+  position: absolute;
+  top: 67%;
+}
+
+button {
+  margin: 0 10px;
+  width: 180px;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 30px;
+  font-family: "Poetsen One", sans-serif;
+  border: 2px solid #097969;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 1.2rem;
+}
+
+span {
+  background-color: #097969;
+  height: 100%;
+  width: 0;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.4s ease-out;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button:hover {
+  border: none;
+}
+
+.project-tile {
+  width: 80%;
+  height: 80vh;
+  margin: 3%;
+  display: flex;
+  align-items: center;
+}
+
+figure {
+  width: 100%;
+}
+
+.project-tile a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Oswald;
+  text-align: center;
+  transition: 0.5s ease-out;
+}
+
+.project-tile a:hover {
+  transform: scale(1.2);
+}
+
+#projects img {
+  border-radius: 25px;
+}
+
+i {
+  color: #fff;
+}
+
+#navbar .icon {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 680px) {
+  #navbar ul li {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  #welcome-section h1 {
+    transform: scale(1.1);
+    padding-bottom: 0;
+    transition: 0.4s ease-out;
+  }
+  #welcome-section h1:hover {
+    transform: scale(1.4);
+  }
+  #welcome-section p {
+    padding-top: 0;
+    font-size: 0.9rem;
+  }
+  button {
+    transform: scale(0.9) translateY(-50%);
+    margin: 0;
+  }
+
+  .education, .experience {
+    flex-direction: column;
+  }
+  
+  header img {
+    transform: scale(0.7);
+  }
+  #projects h1 {
+    transform: scale(0.8);
+  }
+  #contact h1 {
+    transform: scale(1.1);
+  }
+  #contact p {
+    padding-top: 30px;
+  }
+  .contact {
+    font-size: 1rem;
+  }
+  #copyright {
+    height: 10vh;
+    font-size: 0.8rem;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #navbar ul li {
+    display: block;
+  }
+  #navbar a.icon {
+    float: right;
+    display: none;
+    transform: translateX(100px);
+  }
+
+  #navbar.responsive {
+    position: relative;
+  }
+  #navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-size: 0.9rem;
+    float: left;
+    top: 100px;
+    left: 20px;
+  }
+
+  #navbar ul li {
+    margin-bottom: 15px;
+  }
+
+  #welcome-section h1 {
+    transform: scale(1.1);
+    padding-bottom: 0;
+    transition: 0.4s ease-out;
+  }
+  #welcome-section h1:hover {
+    transform: scale(1.4);
+  }
+  #welcome-section p {
+    padding-top: 0;
+    font-size: 0.9rem;
+  }
+  button {
+    transform: scale(0.9) translateY(-50%);
+    margin: 0;
+  }
+  header img {
+    transform: scale(0.7);
+  }
+  #projects h1 {
+    transform: scale(0.8);
+  }
+  #contact h1 {
+    transform: scale(1.1);
+  }
+  #contact p {
+    padding-top: 30px;
+  }
+  .contact {
+    font-size: 1rem;
+  }
+  #copyright {
+    height: 10vh;
+    font-size: 0.8rem;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #navbar .icon {
+    transform: translateX(-800px);
+  }
+
+  #welcome-section h1 {
+    transform: scale(0.7);
+  }
+  #welcome-section h1:hover {
+    transform: scale(0.9);
+  }
+  #welcome-section p {
+    transform: scale(0.8);
+    padding-top: 10px;
+  }
+  button {
+    transform: scale(0.7) translate(60%, -70%);
+  }
+  #projects h1 {
+    transform: scale(0.6) translate(-50%);
+    width: 300px;
+  }
+  #contact h1 {
+    transform: scale(0.8) translateX(-13%);
+    width: 400px;
+    transition: 0.5s ease-out;
+  }
+  #contact h1:hover {
+    transform: scale(1) translateX(-9%);
+  }
+  #contact p {
+    transform: scale(0.7) translateY(-40px);
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+
+    transform: translate(0, -30%);
+  }
+  .contact a {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .project-tile {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 20vh;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+
+    transform: translateY(50%);
+  }
+  .capstone {
+    width: 60%;
+    transform: translateX(30%);
+  }
+  figure {
+    margin-top: 40px;
+  }
+  #projects img {
+    border-radius: 25px;
+  }
+}
