@@ -1,0 +1,801 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+body {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    overflow-x: hidden;
+}
+
+/* ======header styles====== */
+
+.header {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 6%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    height: 90%;
+    margin-left: 1.2em;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4rem;
+    padding-right: 2rem;
+}
+
+.nav-list li {
+    list-style-type: none;
+    font-family: "Oswald", sans-serif;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: .2s;
+}
+
+.nav-list a:hover {
+    color:rgb(12, 196, 12);
+}
+
+.nav-list .home-green {
+    color:rgb(12, 196, 12);
+}
+
+.nav-list .home-green:hover {
+    color: #ffffff;
+    transition: .2s;
+}
+
+.nav-list li:last-child {
+    border: 1px solid #ffffff;
+    padding: 0.5em 1.7em;
+    font-weight: 800;
+    border-radius: 10px;
+    background: linear-gradient(
+        60deg,
+        rgb(12, 196, 12) 45%,
+        rgba(12, 28, 6, 0.5)
+    );
+    transition: .2s;
+}
+
+.nav-list li:last-child:hover {
+    background: black;
+    color: #fff;
+}
+
+/* =======home-section styles======== */
+
+#home {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 1)
+    ), url(logo.png);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.home-left {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-right {
+    width: 50%;
+    height: 80vh;
+}
+
+.home-left-description {
+    height: 50%;
+    width: 90%;
+}
+
+.home-left-description h1 span {
+    color:rgb(12, 196, 12);
+    font-family: "DM Serif Display", serif;
+}
+
+.home-left-description h1 {
+    font-size: 3.6rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    font-family: "Hind Madurai", sans-serif;
+    text-transform: uppercase;
+}
+
+.home-left-description p {
+    font-size: 1.45rem;
+    font-family: "Hind Madurai", sans-serif;
+    margin-bottom: 1rem;
+    width: 78%;
+}
+
+.home-right {
+    display: flex;
+    align-items: center;
+}
+.home-right img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-btn {
+    font-size: 1.15rem;
+    border: 1px solid #ffffff;
+    padding: 0.5em 1.7em;
+    font-weight: 800;
+    border-radius: 10px;
+    background: linear-gradient(
+        60deg,
+        rgb(12, 196, 12) 45%,
+        rgba(11, 22, 7, 0.5)
+    );
+    margin-right: 1em;
+    font-family: "Hind Madurai", sans-serif;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.home-btn:hover {
+    background: black;
+    color: #46d30f;
+}
+
+#save {
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.save-description {
+    width: 78%;
+    margin: auto;
+}
+
+.save-description-top {
+    text-align: center;
+}
+
+.save-description-top h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: "Hind Madurai", sans-serif;
+    margin-bottom: 1.2rem;
+}
+
+.save-description-top h1 span {
+    color:rgb(12, 196, 12);
+    font-style: italic;
+    font-family: "DM Serif Display", serif;
+}
+
+.save-description-top p {
+    font-size: 1.3rem;
+    font-family: "Hind Madurai", sans-serif;
+    margin-bottom: 1rem;
+}
+
+.save-description-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.save-description-bottom figcaption {
+    text-align: center;
+    font-family: "Hind Madurai", sans-serif;
+}
+
+.save-description-bottom figure:nth-of-type(1) {
+    transform: translateY(-1.1rem);
+}
+
+.save-description-bottom figure:nth-of-type(2) {
+    transform: translateY(-0.3rem);
+}
+
+#travel {
+    width: 100%;
+    height: 90vh;
+    margin-top: 10rem;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 1)
+    ), url(https://thumbs.dreamstime.com/b/blonde-woman-green-dress-holding-cash-dollars-young-beautiful-background-atm-shopping-center-61139717.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.travel-left {
+    width: 43%;
+    padding-top: 18rem;
+    height: 100%;
+}
+
+.travel-right {
+    width: 40%;
+    height: 100%;
+    padding: 8rem 5rem 4rem 5rem;
+}
+
+.travel-left .green-color{
+    width: 25%;
+    height: 0.3rem;
+    background-color: #46d30f;
+    margin-left: 5rem;
+}
+
+.travel-left h1 {
+    margin: 1rem 5rem;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 3rem;
+}
+
+.travel-right p {
+    margin-bottom: 1.4rem;
+    font-size: 1.32rem;
+    font-family: "Hind Madurai", sans-serif;
+}
+
+/* ======footer styles====== */
+
+#contact {
+    margin-top: 5rem;
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 1)
+    ), url(https://img.freepik.com/free-vector/paper-style-luxury-background_52683-64817.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716508800&semt=ais_user);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.flex {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex1 {
+    width: 25%;
+    height: 100%;
+}
+
+.flex2 {
+    width: 20%;
+    height: 100%;
+}
+
+.flex3 {
+    width: 20%;
+    height: 100%;
+}
+
+.flex4 {
+    width: 30%;
+    height: 100%;
+}
+
+.flex1 img {
+    height: 100%;
+}
+
+.flex1 .logo {
+    height: 45%;
+}
+
+.flex1 p {
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 1.4rem;
+    padding: 1rem 4.2rem 1rem 2.2rem;
+    
+}
+
+.icons {
+    margin-left: 2.2rem;
+}
+
+.icons i {
+    font-size: 1.3rem;
+    margin-right: 0.6rem;
+    transition: .3s;
+}
+
+.icons i:hover {
+    color: #46d30f;
+    transform: translateY(0.2rem);
+}
+
+.flex2 strong {
+    color: #379711;
+    font-size: 1.3rem;
+    font-family: "Hind Madurai", sans-serif;
+}
+
+.flex2 div {
+    padding-top: 4rem;
+    color: rgb(12, 196, 12);
+    padding-left: 0.8rem;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 1.6rem;
+}
+
+.flex2 ul {
+    padding: 1rem 2rem 0 2rem;
+}
+
+.flex2 ul li {
+    margin-bottom: 0.5rem;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 1.3rem;
+}
+
+.flex3 div {
+    margin-bottom: 1rem;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 1.3rem;
+    padding-left: 0.8rem;
+}
+
+.flex3 div:nth-of-type(1) {
+    padding-top: 4rem;
+    color: rgb(12, 196, 12);
+    padding-left: 0.8rem;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 1.6rem;
+}
+
+.flex3 strong {
+    color: rgb(12, 196, 12);
+}
+
+.flex4 strong {
+    font-size: 1.6rem;
+    font-family: "Hind Madurai", sans-serif;
+}
+
+.flex4 div:nth-of-type(1) {
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.flex4 span {
+    color:rgb(12, 196, 12);
+}
+
+.input {
+    width: 80%;
+    margin: auto;
+    margin-top: 1.2rem;
+    position: relative;
+}
+
+.input input {
+    width: 100%;
+    padding: 0.8rem;
+    padding-left: 1.2rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: "Hind Madurai", sans-serif;
+}
+
+.input button {
+    background-color: #379711;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#contact p:last-of-type {
+    text-align: center;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 1.1rem;
+}
+
+#contact p:last-of-type::before {
+    content: ""
+}
+
+/* ======making mobile navbar icon for responsiveness on mobile devices */
+
+.mobile-nav i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+/* ==================
+    Responsive styles
+   ================== */
+
+/* For screen greater than 980px */
+
+@media(max-width: 980px) {
+    .mobile-nav {
+        display: block;
+        z-index: 10;
+        position: fixed;
+        right: 8%;
+    }
+
+    .header .logo {
+        height: 60%;
+        background: transparent;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .nav {
+        width: 100%;
+        height: 70vh;
+        background: rgba(63, 147, 14, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        transform: translateY(-100%);
+        transition: .4s;
+        visibility: hidden;
+        pointer-events: none;
+
+    }
+
+    .nav-list {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 0;
+        align-items: center;
+    }
+
+    .active .nav {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+    }
+
+    .home-left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-left-description h1 {
+        font-size: 2.3rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        font-family: "Hind Madurai", sans-serif;
+        text-transform: uppercase;
+    }
+
+    .home-left-description p {
+        font-size: 1.05rem;
+        font-family: "Hind Madurai", sans-serif;
+        margin-bottom: 1rem;
+        width: 78%;
+    }
+
+    .home-right img {
+        height: 60%;
+        object-fit: cover;
+        transform: translateY(3rem);
+    }
+
+    .home-btn {
+        font-size: 1rem;
+        border: 1px solid #ffffff;
+        padding: 0.5em 1.4em;
+        font-weight: 800;
+        border-radius: 10px;
+        background: linear-gradient(
+            60deg,
+            rgb(12, 196, 12) 45%,
+            rgba(11, 22, 7, 0.5)
+        );
+        margin-bottom: 1.4em;
+        font-family: "Hind Madurai", sans-serif;
+        cursor: pointer;
+        transition: .2s;
+    }
+    
+    .home-btn:hover {
+        background: black;
+        color: #46d30f;
+    }
+
+    #save {
+        width: 80%;
+        margin: auto;
+        margin-top: 10rem;
+        margin-bottom: 40rem;
+    }
+
+    .save-description-top h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        font-family: "Hind Madurai", sans-serif;
+        margin-bottom: 1.2rem;
+    }
+
+    .save-description-top p {
+        font-size: 1rem;
+        font-family: "Hind Madurai", sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    .save-description-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    #travel {
+        width: 100%;
+        height: 120vh;
+        
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 1)
+        ), url(https://thumbs.dreamstime.com/b/blonde-woman-green-dress-holding-cash-dollars-young-beautiful-background-atm-shopping-center-61139717.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .travel-left h1 {
+        margin: 1rem 0 1rem 3rem;
+        padding-right: 0;
+        font-family: "Hind Madurai", sans-serif;
+        font-size: 1.6rem;
+    }
+
+    .travel-right {
+        width: 40%;
+        height: 100%;
+        padding: 4rem 2rem 4rem 0;
+    }
+
+    .travel-left .green-color{
+        width: 35%;
+        height: 0.3rem;
+        background-color: #46d30f;
+        margin-left: 3rem;
+    }
+
+    .travel-right p {
+        margin-bottom: 1.4rem;
+        font-size: 1rem;
+        font-family: "Hind Madurai", sans-serif;
+    }
+
+    .flex {
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact {
+        margin-top: 5rem;
+        width: 100%;
+        height: 120vh;
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 1)
+        ), url(https://img.freepik.com/free-vector/paper-style-luxury-background_52683-64817.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716508800&semt=ais_user);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .flex1 {
+        width: 80%;
+        padding-top: 20rem;
+    }
+    
+    .flex2 {
+        width: 80%;
+    }
+    
+    .flex3 {
+        width: 80%;
+    }
+    
+    .flex4 {
+        width: 80%;
+    }
+    
+    .flex1 img {
+        height: 100%;
+    }
+    
+    .flex1 .logo {
+        height: 15%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .flex1 p {
+        font-family: "Hind Madurai", sans-serif;
+        font-size: 1.2rem;
+        display: flex;
+        transform: translateX(2rem);
+        padding: 2rem 3rem 2rem 0;
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .icons i {
+        font-size: 1.3rem;
+        margin-right: 0.6rem;
+        transition: .3s;
+    }
+    
+    .icons i:hover {
+        color: #46d30f;
+        transform: translateY(0.2rem);
+    }
+    
+    .flex2 strong {
+        color: #379711;
+        font-size: 1.2rem;
+        font-family: "Hind Madurai", sans-serif;
+    }
+    
+    .flex2 div {
+        padding-top: 4rem;
+        color: rgb(12, 196, 12);
+        padding-left: 0.8rem;
+        font-family: "Hind Madurai", sans-serif;
+        font-size: 1.4rem;
+    }
+    
+    .flex2 ul {
+        padding: 1rem 2rem 0 2rem;
+    }
+    
+    .flex2 ul li {
+        margin-bottom: 0.5rem;
+        font-family: "Hind Madurai", sans-serif;
+        font-size: 1rem;
+    }
+    
+    .flex3 div {
+        margin-bottom: 1rem;
+        font-family: "Hind Madurai", sans-serif;
+        font-size: 1rem;
+        padding-left: 0.8rem;
+    }
+    
+    .flex3 div:nth-of-type(1) {
+        padding-top: 4rem;
+        color: rgb(12, 196, 12);
+        padding-left: 0.8rem;
+        font-family: "Hind Madurai", sans-serif;
+        font-size: 1.4rem;
+    }
+    
+    .flex3 strong {
+        color: rgb(12, 196, 12);
+    }
+    
+    .flex4 strong {
+        font-size: 1.3rem;
+        font-family: "Hind Madurai", sans-serif;
+    }
+    
+    .flex4 div:nth-of-type(1) {
+        padding-top: 4rem;
+        text-align: center;
+    }
+    
+    .flex4 span {
+        color:rgb(12, 196, 12);
+    }
+    
+    .input {
+        width: 80%;
+        margin: auto;
+        margin-top: 1.2rem;
+        position: relative;
+    }
+    
+    .input input {
+        width: 100%;
+        padding: 0.6rem;
+        padding-left: 1.1rem;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-family: "Hind Madurai", sans-serif;
+    }
+    
+    .input button {
+        background-color: #379711;
+        font-family: "Hind Madurai", sans-serif;
+        font-size: 1rem;
+        padding: 0.3rem;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    
+    #contact p:last-of-type {
+        text-align: center;
+        font-family: "Hind Madurai", sans-serif;
+        font-size: 1.1rem;
+        transform: translateY(-24rem);
+    }
+}
